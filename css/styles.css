@@ -4,6 +4,7 @@
   --primary-text-color: #212121;
   --primary-background-color: #e5e5e5;
   --secondary-background-color: #2f303a;
+  --section-padding-gap: 94px;
 }
 
 h1,
@@ -19,7 +20,7 @@ ul {
   padding-left: 0;
 }
 
-}
+
 img {
   display: block;
 }
@@ -33,15 +34,18 @@ img {
   text-decoration: none;
 }
 
+ 
 body {
   font-family: "Roboto", sans-serif;
-  color: rav(--primary-text-color);
+  color: var(--primary-text-color);
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 
 /* ======== Шапка сторінки ======== */
@@ -135,8 +139,6 @@ body {
 }
 
 .hero-push {
-  border-radius: 4px;
-  padding: 10px 32px;
   min-width: 200px;
   font-weight: 700;
   font-size: 16px;
@@ -144,6 +146,8 @@ body {
   align-items: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
 .hero-push:hover,
@@ -159,9 +163,10 @@ body {
 }
 
 /* ======= Cильні сторони ========= */
+
 .advantage-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--section-padding-gap);
+  padding-bottom: var(--section-padding-gap);
 }
 
 .advantage-list {
@@ -198,7 +203,7 @@ body {
 /* ====== Компетенція працівників і Співробітники ======= */
 
 .teamwork-section {
-  padding-bottom: 94px;
+  padding-bottom: var(--section-padding-gap);
 }
 
 .teamwork-list {
@@ -234,15 +239,6 @@ body {
   margin-top: -30px;
 }
 
-/*display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;*/
-
- /* flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px; */
-
 .staff-team-list {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
@@ -262,8 +258,8 @@ body {
 
 .team-group-section {
   background-color: var(--primary-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--section-padding-gap);
+  padding-bottom: var(--section-padding-gap);
 }
 /* Футер */
 
@@ -309,8 +305,6 @@ body {
   vertical-align: top;
   letter-spacing: 0.03em;
   color: #ffffff;
-
-
 }
 
 .info-footer {
@@ -339,17 +333,63 @@ body {
   cursor: pointer;
 }
 
+.menu-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+   
+}
+.section {
+  padding-top: var(--section-padding-gap);
+  padding-bottom: var(--section-padding-gap);
+}
+.menu-button-go:not(:last-child) {
+  margin-right: 8px;
+  
+}
+.menu-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.catalogue {
+  flex-basis: calc((100% - 270px) / 9);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.card-border-content {
+
+  border: 1px solid #EEEEEE;
+  border-top: none;
+ 
+}
 .section-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  align-items: left;
   letter-spacing: 0.06em;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
   margin-bottom: 4px;
 }
 .menu-cards-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
+  align-items: left;
   letter-spacing: 0.03em;
   color: #757575;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
+/* div container - container
+ul - class"card-set" - menu-cards
+li - class' item" - catalogue
+article - class"card-thumb" - div class"card-thumb"
+h2 class "card-heading - section-title
+p card-text - menu-cards-button

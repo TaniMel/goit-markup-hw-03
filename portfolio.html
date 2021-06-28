@@ -23,7 +23,7 @@
   <body>
     <!--Шапка сторінки-->
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="navigation">
           <a class="logo link" href="./" lang="en"
             ><span class="accent-logo">Web</span>Studio</a
@@ -44,19 +44,19 @@
               <a class="menu-link link" href="">Контакты</a>
             </li>
           </ul>
-          <ul class="contact list">
-            <li class="contact-list">
-              <a class="contact-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contact-list">
-              <a class="contact-link link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
         </nav>
+        <ul class="contact list">
+          <li class="contact-list">
+            <a class="contact-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-list">
+            <a class="contact-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -64,36 +64,38 @@
       <section class="section">
         <div class="container">
           <ul class="menu-button list">
-            <li>
+            <li class="menu-button-go">
               <button class="modal-button" type="button">Все</button>
             </li>
-            <li>
+            <li class="menu-button-go">
               <button class="modal-button" type="button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="menu-button-go">
               <button class="modal-button" type="button">Приложения</button>
             </li>
-            <li>
+            <li class="menu-button-go">
               <button class="modal-button" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="menu-button-go">
               <button class="modal-button" type="button">Маркетинг</button>
             </li>
           </ul>
         </div>
         <div class="container">
           <ul class="menu-cards list">
-            <li>
+            <li class="catalogue">
               <img
                 src="./images/photo-01.jpg"
                 alt="Фото экрана ноутбука"
                 width="370"
                 height="295"
               />
-              <h2 class="section-title">Технокряк</h2>
-              <p class="menu-cards-button">Веб-сайт</p>
+              <div class="card-border-content">
+                <h2 class="section-title">Технокряк</h2>
+                <p class="menu-cards-button">Веб-сайт</p>
+              </div>
             </li>
-            <li>
+            <li class="catalogue">
               <img
                 src="./images/photo-02.jpg"
                 alt="Фото игры баскетбола"
@@ -105,7 +107,7 @@
               </h2>
               <p class="menu-cards-button">Дизайн</p>
             </li>
-            <li>
+            <li class="catalogue">
               <img
                 src="./images/photo-03.jpg"
                 alt="Фото эмблема ресторана"
@@ -117,7 +119,7 @@
               </h2>
               <p class="menu-cards-button">Приложение</p>
             </li>
-            <li>
+            <li class="catalogue">
               <img
                 src="./images/photo-04.jpg"
                 alt="Фото беспроводных наушников"
@@ -127,7 +129,7 @@
               <h2 class="section-title">Проект <span lang="en">Prime</span></h2>
               <p class="menu-cards-button">Маркетинг</p>
             </li>
-            <li>
+            <li class="catalogue">
               <img
                 src="./images/photo-05.jpg"
                 alt="Фото двух коробок"
@@ -137,7 +139,7 @@
               <h2 class="section-title">Проект<span lang="en">Boxes</span></h2>
               <p class="menu-cards-button">Приложение</p>
             </li>
-            <li>
+            <li class="catalogue">
               <img
                 src="./images/photo-06.jpg"
                 alt="Фото экрана компьютера"
@@ -149,7 +151,7 @@
               </h2>
               <p class="menu-cards-button">Приложение</p>
             </li>
-            <li>
+            <li class="catalogue">
               <img
                 src="./images/photo-07.jpg"
                 alt="Фото журнала"
@@ -161,7 +163,7 @@
               </h2>
               <p class="menu-cards-button">Дизайн</p>
             </li>
-            <li>
+            <li class="catalogue">
               <img
                 src="./images/photo-08.jpg"
                 alt="Фото этикетки одежды"
@@ -172,7 +174,7 @@
               <p class="menu-cards-button">Маркетинг</p>
             </li>
 
-            <li>
+            <li class="catalogue">
               <img
                 src="./images/photo-09.jpg"
                 alt="Человек работает за компьютером"
@@ -188,8 +190,8 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <a class="logo link" href="./" lang="en"
+      <div class="container footer-container">
+        <a class="logo-footer link" href="./" lang="en"
           ><span class="accent-logo">Web</span
           ><span class="accent-logo-white">Studio</span></a
         >
@@ -206,12 +208,12 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
+            <li class="info-list">
               <a class="info-footer link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="info-list">
               <a class="info-footer link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
